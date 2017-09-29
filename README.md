@@ -21,5 +21,7 @@ rails g migration RemoveDescriptionFromRepositories  (faz as paradas automatico 
 rake db:migrate
 rake db:rollback
 
+rails g model brain zombie_id:integer status:string (cria models depois de ter criado o scaffold)
+
 # rails console
 Repository.create(repo_id: 0,name: 'benny',user: 'bennusr',description: 'blabla', stars: 20)
